@@ -1,15 +1,17 @@
 
 import * as React from "react";
+import * as commonStore from "../redux/reducers/counter";
 
 
-interface IHomePageProps{
-  name:string
+type IHomePageProps={
+  counterState:commonStore.IinitialState
 }
+& typeof commonStore.actionCreators
 
-const HomePage:React.FC<IHomePageProps> = ({name})=>{
+const HomePage:React.FC<IHomePageProps> = ({counterState,signUpCompany})=>{
 
     return (<>
-     <div>this is it {name}</div>
+     <div onClick={()=>{signUpCompany("singh")}}>this is it {counterState.name}</div>
     </>)
 }
 
