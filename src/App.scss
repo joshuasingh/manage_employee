@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.landing-page-container {
+  background-image: linear-gradient(#f3f5f8, #d6dce1);
+  height: 120vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-page-introduction {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page-feature-container {
+  flex: 2;
+}
+
+.landing-page-footer-container {
+  flex: 1;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+  width: 60%;
+}
+
+.about-us-title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.landing-company-title {
+  font-family: Candal;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  color: #ec3b09 !important;
+}
+
+.about-us-content {
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.125rem;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.landing-page-button-holder {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.signup-form-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.signup-form {
+  width: 40%;
+  padding: 12px 80px;
+  border-radius: 13px;
+  min-width: 450px;
+  background-image: linear-gradient(#f3f5f8, #d6dce1);
+  box-shadow: -1px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.spinner-container {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0px;
+  left: 0px;
+}

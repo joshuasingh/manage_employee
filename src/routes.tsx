@@ -1,22 +1,25 @@
-import React from "react";
+
 import {
-    Redirect,
     Switch,
-    Route
+  Route
   } from "react-router-dom";
 
-
-import HomeContainer from "./Components/HomeContainer"
-import HomePage from "./Components/HomePage";
+import LandingPageContainer from "./Components/Landing/LandingPageContainer";
+import SignUpContainer from "./Components/SignUp/SignUpContainer";
+import SignInContainer from "./Components/SignIn/SignInContainer";
 
 export const Routes=()=>{
 return(<>
    <Switch>
-       <Route  path="/home" >
-           <HomeContainer/>
-           </Route>
-           <Route path="/homessss" >
-           
+   <Route  path="/home" >
+                <LandingPageContainer/>
+           </Route>  
+       
+           <Route path="/SignUp" >
+                <SignUpContainer/>
+           </Route>  
+           <Route path="/SignIn" >
+                <SignInContainer/>
            </Route>  
        </Switch>
    </>
