@@ -1,5 +1,7 @@
 
 import * as React from "react";
+import {useHistory} from "react-router-dom";
+
 
 
 
@@ -8,7 +10,7 @@ type IAboutUsProps={
 }
 
 const AboutUs:React.FC<IAboutUsProps> = ({})=>{
-
+  const history=useHistory();
     return (<>
            <div className="about-us-container about-us-container-dimension">
              <div className="about-us-title">About Us</div>   
@@ -18,8 +20,8 @@ const AboutUs:React.FC<IAboutUsProps> = ({})=>{
                                                asdhjasd haskdh </div>
               <div className="landing-page-button-holder"> 
              
-               <button type="button" className="btn btn-primary">SignIn</button>
-               <button type="button" className="btn btn-primary">SignUp</button>
+               <button type="button" className="btn btn-primary" onClick={()=>{history.push("/SignIn")}}>SignIn</button>
+               <button type="button" className="btn btn-primary"onClick={()=>{history.push("/SignUp")}}>SignUp</button>
                </div>                                 
          </div>
     </>)

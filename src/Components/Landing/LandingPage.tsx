@@ -10,6 +10,8 @@ type ILandingPageProps={
 
 const LandingPage:React.FC<ILandingPageProps> = ({})=>{
 
+
+
     return (<>
            <div className="landing-page-container">
              <div className="landing-page-introduction">

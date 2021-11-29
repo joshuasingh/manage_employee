@@ -184,7 +184,7 @@ const SignUp:React.FC<ISignUpProps> = ({isUserNameUnique,loginState,signUpCompan
     <div className="signup-form-page">
      {getLoadingStatus()} 
            <div className="signup-form">
-            <form >
+            <form autoComplete="false">
             <div className="form-group">
     <label >Company Name</label>
     <input type="text" className="form-control" value={companyData.companyName} onChange={(e)=>{receiveCompanyData("companyName",e.target.value)}} onBlur={()=>{checkFormError()}}/>
@@ -203,6 +203,7 @@ const SignUp:React.FC<ISignUpProps> = ({isUserNameUnique,loginState,signUpCompan
     <input type="text" className="form-control" value={companyData.userName}
      onChange={(e)=>{receiveCompanyData("userName",e.target.value)}}
      onBlur={()=>{checkFormError()}}
+     autoComplete="false"
     />
     <small className="form-text text-muted">{companyErr.userNameErr}</small>
   </div>
@@ -212,6 +213,7 @@ const SignUp:React.FC<ISignUpProps> = ({isUserNameUnique,loginState,signUpCompan
     value={companyData.password}
     onChange={(e)=>{receiveCompanyData("password",e.target.value)}}
     onBlur={()=>{checkFormError()}}
+    
     />
     <small className="form-text text-muted">{companyErr.passwordErr}</small>
   </div>
@@ -226,7 +228,10 @@ const SignUp:React.FC<ISignUpProps> = ({isUserNameUnique,loginState,signUpCompan
   </div>
   
 </form>
+<div className="form-button-container">
 <button  className="btn btn-primary" onClick={()=>{signUpCompanyDetails()}}>Sign Up</button>
+<button  className="btn btn-primary" onClick={()=>{history.push("/home")}}>Back</button>
+</div>
 </div>
    </div>
      

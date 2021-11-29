@@ -55,7 +55,7 @@ const SignIn:React.FC<ISignInProps> = ({loginState,signInCompany})=>{
 
     
     const handleloginSuccess=()=>{
-         history.push("/home")
+         history.push("/Dashboard")
     }
     
    
@@ -150,7 +150,10 @@ const SignIn:React.FC<ISignInProps> = ({loginState,signInCompany})=>{
   </div>
   
 </form>
-<button  className="btn btn-primary" onClick={()=>{loginToAccount()}}>Sign Up</button>
+<div className="form-button-container">
+<button  className="btn btn-primary" onClick={()=>{loginToAccount()}}>Sign In</button>
+<button  className="btn btn-primary" onClick={()=>{history.push("/home")}}>Back</button>
+ </div>
 </div>
    </div>
      
