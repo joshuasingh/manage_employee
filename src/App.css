@@ -273,4 +273,24 @@
   -webkit-transform-origin: 0% 50%;
           transform-origin: 0% 50%;
 }
+
+.dashboard-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 20px;
+}
+
+.dashboard-card {
+  background: beige;
+  display: inline-block;
+  padding: 30px;
+}
+
+.dashboard-card:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=App.css.map */

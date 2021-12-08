@@ -5,7 +5,7 @@ import { ApplicationState } from './types';
 import * as commonStore from "./reducers/counter"; 
 import * as usermanagementStore from "./reducers/usermanagementStore";
 import * as NotificationStore from "./reducers/NotificationStore";
-
+import * as dashboardStore from "./reducers/dashBoardManagementStore";
 
 
 
@@ -14,7 +14,8 @@ export const reducers={
 
     counterState:commonStore.reducer,
     loginState:usermanagementStore.reducer,
-    notifyState:NotificationStore.reducer
+    notifyState:NotificationStore.reducer,
+    dashboardState:dashboardStore.reducer
 }
 
 

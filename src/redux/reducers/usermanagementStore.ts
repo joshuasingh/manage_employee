@@ -116,7 +116,29 @@ export const actionCreators={
     })
      
        
-}
+},
+
+
+
+
+
+testToken:():AppThunkAction<any>=>(dispatch,getState)=>{
+
+    
+    axios.post(url+"/dashboard/getDashBoardMenu",{},{withCredentials:true})
+    .then(response=>{
+         
+    })
+    .catch(e=>{
+      dispatch({type:actionTypes.SET_NOTIFICATION
+          ,data:{message:Messages.userNameCheckFailed,
+               position:IPostion.TOPCENTER,
+               messageType:IMessageType.SUCCESS} })
+       
+        dispatch({type:actionTypes.SET_NOT_UNIQUE_NAME_STATUS});
+    })
+  
+   }
 
 
 
